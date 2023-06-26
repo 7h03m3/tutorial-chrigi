@@ -1,0 +1,115 @@
+<h2>Bedingungen</h2>
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    Erklärung
+  </mat-expansion-panel-header>
+  <div>
+    Mit Bedingungen können Werte (z.B. Nummern) einer oder mehreren Variablen verglichen werden.
+    Als Resultat kommt ein binärer Wert (true / false) heraus. Dies wird auch ein boolean genannt.
+    Es wird dabei immer von links nach rechts aufgelöst.
+  </div>
+
+  Es gibt die folgenden Vergleichsoperatoren:
+  <ul>
+    <li>
+      <mat-chip>==</mat-chip>
+      Gleich
+    </li>
+    <li>
+      <mat-chip>!=</mat-chip>
+      Ungleich
+    </li>
+    <li>
+      <mat-chip>></mat-chip>
+      Grösser
+    </li>
+    <li>
+      <mat-chip><</mat-chip>
+      Kleiner
+    </li>
+    <li>
+      <mat-chip>>=</mat-chip>
+      Grösser-Gleich
+    </li>
+    <li>
+      <mat-chip><=</mat-chip>
+      Kleiner-Gleich
+    </li>
+  </ul>
+  Mit den folgenden Operatorn können die Bedingungen logisch verknüpft werden:
+  <ul>
+    <li>
+      <mat-chip>&&</mat-chip>
+      Und / AND
+    </li>
+    <li>
+      <mat-chip>||</mat-chip>
+      Oder / OR
+    </li>
+    <li>
+      <mat-chip>!</mat-chip>
+      Nicht / NOT
+    </li>
+  </ul>
+  Werden Bedingungen miteinander verknüpft, müssen Klammern
+  <mat-chip>(...)</mat-chip>
+  verwendet werden.
+  Hier ein Beispiel: <br>
+  <mat-chip>(Zahl1 == 0) || (Zahl1 == 2)</mat-chip>
+  Trifft zu wenn Zahl1 gleich 0 oder 2 ist.
+</mat-expansion-panel>
+<br>
+<mat-form-field appearance="outline" class="number-input">
+  <mat-label>number1</mat-label>
+  <input [(ngModel)]="number1" matInput type="number">
+</mat-form-field>
+
+<mat-form-field appearance="outline" class="number-input">
+  <mat-label>number2</mat-label>
+  <input [(ngModel)]="number2" matInput type="number">
+</mat-form-field>
+
+<br>Löse folgende Aufgaben:<br>
+<table>
+  <tr>
+    <th>Funktion</th>
+    <th>Aufgabe</th>
+    <th>Resultat</th>
+  </tr>
+  <tr>
+    <td>aufgabe1()</td>
+    <td>number1 ist ungleich number2</td>
+    <td>{{aufgabe1()}}</td>
+  </tr>
+  <tr>
+    <td>aufgabe2()</td>
+    <td>number1 ist gleich 15</td>
+    <td>{{aufgabe2()}}</td>
+  </tr>
+
+  <tr>
+    <td>aufgabe3()</td>
+    <td>number1 ist grösser als number2</td>
+    <td>{{aufgabe3()}}</td>
+  </tr>
+
+  <tr>
+    <td>aufgabe4()</td>
+    <td>number1 ist grösse als 15 aber kleiner als 20</td>
+    <td>{{aufgabe4()}}</td>
+  </tr>
+
+  <tr>
+    <td>aufgabe5()</td>
+    <td>number1 ist grösser gleich 12 oder number2 ist kleiner gleich 9</td>
+    <td>{{aufgabe5()}}</td>
+  </tr>
+
+  <tr>
+    <td>aufgabe6()</td>
+    <td>number1 ist nicht gleich 12 und nicht gleich 9</td>
+    <td>{{aufgabe6()}}</td>
+  </tr>
+
+</table>
+
