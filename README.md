@@ -1,7 +1,7 @@
 # Chrigi Programming Tutorial
 ## Tools
 Es müssen die folgenden Tools installiert werden:
-* [Node.js (JavaScript Compiler)](git@github.com:7h03m3/tutorial-chrigi.git)
+* [Node.js (JavaScript Compiler)](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi)
 * [WebStorm (Editor)](https://www.jetbrains.com/webstorm/download/download-thanks.html?platform=windows)
 * [Git (Versionierung)](https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.1/Git-2.41.0-64-bit.exe)
 
